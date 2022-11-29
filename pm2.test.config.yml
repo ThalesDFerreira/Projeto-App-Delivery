@@ -1,0 +1,19 @@
+apps:
+- name: delivery-app-back-end
+  cwd: ./back-end
+  script: npm
+  args: "start"
+  exec_mode: fork
+  max_restarts: 3
+  max_memory_restart: 200M
+  env:
+    PORT: 3001
+- name: delivery-app-front-end
+  cwd: ./front-end
+  script: npm
+  args: "run start"
+  exec_mode: fork
+  max_restarts: 3
+  max_memory_restart: 200M
+  env:
+    PORT: 3000

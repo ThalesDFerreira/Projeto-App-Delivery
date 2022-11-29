@@ -1,0 +1,57 @@
+{
+  "name": "sd-0x-project-delivery-app",
+  "version": "1.0.0",
+  "description": "\"Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀\"",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "pm2": "./node_modules/.bin/pm2",
+    "jest": "./node_modules/.bin/jest",
+    "start": "./scripts/prepare-for-test.sh",
+    "stop": "(pm2 stop all && pm2 delete all) | grep 'PM2'",
+    "dev": "./scripts/prepare-for-dev.sh",
+    "dev:prestart": "./scripts/prestart-dev.sh",
+    "db:reset": "./scripts/reset-db-dev.sh",
+    "db:reset:debug": "./scripts/reset-db-dev-debug.sh",
+    "pretest": "npm start",
+    "test": "jest -i --forceExit --verbose --config=./jest.config.js",
+    "test:dev": "NODE_ENV=development npm run jest -i --forceExit --config=./jest.config.js",
+    "test:dev:open": "NODE_ENV=development HEADLESS=false npm run test:dev",
+    "test:dev:report": "./__tests__/reports/generate.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betrybe/sd-0x-project-delivery-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betrybe/sd-0x-project-delivery-app/issues"
+  },
+  "homepage": "https://github.com/betrybe/sd-0x-project-delivery-app#readme",
+  "devDependencies": {
+    "@faker-js/faker": "6.0.0",
+    "axios": "0.26.1",
+    "dotenv": "16.0.0",
+    "jest": "27.5.1",
+    "jest-puppeteer": "6.1.0",
+    "jsonwebtoken": "8.5.1",
+    "moment": "2.29.1",
+    "mysql2": "2.3.3",
+    "pm2": "5.2.0",
+    "puppeteer": "13.5.1",
+    "sequelize": "6.17.0",
+    "sequelize-cli": "6.4.1"
+  },
+  "jest": {
+    "globals": {
+      "__DATABASE__": true,
+      "__COVERAGE__": true,
+      "__REQUIREMENTS__": true,
+      "__TESTID__": true,
+      "__TESTDESC__": true,
+      "__TESTFILE__": true
+    }
+  }
+}
