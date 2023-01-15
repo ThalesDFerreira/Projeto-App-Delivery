@@ -16,7 +16,7 @@ const options = {
   database: 
     `${process.env.MYSQL_DB_NAME || 'delivery-app'}${suffix[environment] || suffix.test}`,
   username: process.env.MYSQL_USER || 'root',
-  password: process.env.MYSQL_PASSWORD || 'password',
+  password: process.env.MYSQL_PASSWORD || 'senhaDoDB',
   dialect: 'mysql',
   dialectOptions: {
     timezone: 'Z',
