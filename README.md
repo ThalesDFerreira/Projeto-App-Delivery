@@ -14,7 +14,7 @@ COMO RODAR O PROJETO:
 
 7 - Com o VScode aberto, edite o nome do arquivo ".envexemple" para ".env";
 
-8 - Executar o comando abaixo no terminal aberto no passo "3", sem as aspas: 
+8 - Executar o comando abaixo no terminal aberto no passo "5", sem as aspas: 
 
 "npm start" // para iniciar a aplicação;
 "npm stop" // para parar a aplicação;
