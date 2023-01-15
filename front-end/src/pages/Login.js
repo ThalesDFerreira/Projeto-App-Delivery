@@ -80,7 +80,7 @@ function Login() {
   return (
     <>
       <Header />
-      <div className="w-full h-screen flex flex-col justify-center items-center bg-cover bg-white bg-opacity-50">
+      <div className="container-login-image w-full h-screen flex flex-col justify-center items-center bg-cover bg-white bg-opacity-50">
         <h1 className="text-red-600 text-6xl">Delivery Drinks</h1>
         <div className="w-96 flex bg-red-600 p-8 text-white mt-3">
           <form className="flex flex-col" onSubmit={ handleSubmit }>
