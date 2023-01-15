@@ -1,13 +1,18 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+COMO RODAR O PROJETO:
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+1 - Ter o docker instalado na máquina;
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+2 - Usando o terminal instancie um docker com o comando "docker container run --name app-delivery -e MYSQL_ROOT_PASSWORD=senhaDoDB -d -p 3306:3306 mysql";
+
+3 - Após concluído o processo confirme se todos os container estarão "UP", com o seguinte comando: "docker ps -a";
+
+4 - Então, entre no diretório raiz do projeto (pasta "Projeto-App-Delivery") e abra com o VScode;
+
+5 - Após clique em "Terminal" na barra de atalhos do VScode, localizada do parte superior direita, e clique em "Novo Terminal" (atalho "Ctrl" + "J" - linux);
+
+6 - Com o VScode aberto, edite o nome do arquivo ".envexemple" para ".env";
+
+7 - Executar o comando abaixo no terminal aberto no passo "3", sem as aspas: 
+
+"npm start" // para iniciar a aplicação;
+"npm stop" // para parar a aplicação;
