@@ -18,3 +18,5 @@ COMO RODAR O PROJETO:
 
 "npm start" // para iniciar a aplicação;
 "npm stop" // para parar a aplicação;
+
+![Peek 12-01-2023 17-52](https://user-images.githubusercontent.com/99926224/212533522-dec7ed82-e6ff-4807-8aea-bf3ff7fa513e.gif)
